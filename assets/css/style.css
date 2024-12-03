@@ -1,0 +1,47 @@
+@import url('nav.css');
+@import url('section.css');
+@import url('section2.css');
+@import url('section3.css');
+@import url('section4.css');
+@import url('section5.css');
+@import url('footer.css');
+
+/* Reset básico */
+body, h1, h2, p, a, nav, section, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Impede o scroll horizontal */
+
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+ /*  footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+  } */
+  

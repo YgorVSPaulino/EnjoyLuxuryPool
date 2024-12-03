@@ -1,0 +1,38 @@
+  .menu-lateral {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .menu-lateral img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .menu-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .menu-links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-links a:hover {
+    color: #0056b3;
+  }
+  
+  p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #303030;
+  }
+  

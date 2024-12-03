@@ -1,0 +1,62 @@
+ /* Estilos gerais */
+ .header {
+    background-color: transparent; /* Cor de fundo do cabeçalho */
+    padding: 10px 20px; /* Espaçamento interno */
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between; /* Divide espaço entre os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+  }
+  
+  /* Logo */
+  .nav-logo img {
+    max-height: 70px; /* Ajuste o tamanho da logo */
+    margin-left: 50px;
+  }
+  
+  /* Links de navegação */
+  .nav-links {
+    display: flex; /* Alinha links em linha */
+    gap: 20px; /* Espaçamento entre os links */
+    margin-right: 70px;
+  }
+  .btn {
+    border-radius: 8px;
+    background-color: #007bff;
+    padding: 5px 5px;
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #ffffff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    transition: color 0.3s; /* Efeito de transição ao passar o mouse */
+  }
+  
+  .nav-links a:hover {
+    color: #007bff; /* Altere para a cor desejada ao passar o mouse */
+  }
+
+  /* Estilo para o contêiner que engloba o header e a seção 1 */
+.bg-home {
+    background-image: url('../images/BGPrincipal.png'); /* Caminho da imagem */
+  background-size: cover; /* Faz a imagem cobrir todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  width: 100vw; /* Largura da viewport */
+  height: 100vh; /* Altura da viewport */
+  color: white; /* Deixe o texto visível */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Melhor visualização do texto */
+  }
+  
+  /* Ajuste interno para espaçamento */
+  .hero {
+    padding: 100px 20px; /* Espaçamento da seção */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+  
+  .header {
+    padding: 20px 0; /* Espaçamento no topo do cabeçalho */
+  }

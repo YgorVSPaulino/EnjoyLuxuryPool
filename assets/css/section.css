@@ -1,0 +1,26 @@
+/* Estilo para a seção */
+.section1 {
+    display: flex; /* Ativa o flexbox para layout flexível */
+    justify-content: space-between; /* Coloca os itens nos extremos (texto à esquerda, vídeo à direita) */
+    align-items: center; /* Centraliza verticalmente os itens */
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+  }
+  
+  /* Estilo para o texto */
+  .text h1 {
+    font-size: 3rem; /* Aumenta o tamanho do texto */
+    color: white; /* Cor do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    margin-left: 240px;
+    padding-top: 150px;
+  }
+  
+  /* Estilo para o vídeo */
+  .video img {
+    max-width: 100%; /* Garante que o vídeo ou imagem não ultrapasse o contêiner */
+    max-height: 600px; /* Define uma altura máxima */
+    object-fit: contain; /* Ajusta a imagem dentro do contêiner */
+    margin-right: 240px;
+    padding-top: 100px;
+  }

@@ -1,0 +1,10 @@
+/* Estilo da seção com imagem de fundo */
+.services {
+    background-image: url('../images/BG.png'); /* Caminho da imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    text-align: center; /* Centraliza os títulos */
+  }
+  
+  

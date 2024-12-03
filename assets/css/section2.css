@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 70px;
+  }
+  
+  .image {
+    width: 600px;
+    margin-left: 70px;
+    height: auto;
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para destaque */
+  }
+  
+  .text-content {
+    max-width: 60%;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Organiza o texto em colunas */
+    gap: 15px; /* Espaçamento entre os parágrafos */
+    text-align: justify;
+    margin-right: 90px;
+    
+  }
