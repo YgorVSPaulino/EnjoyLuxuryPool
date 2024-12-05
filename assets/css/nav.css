@@ -1,62 +1,235 @@
- /* Estilos gerais */
- .header {
-    background-color: transparent; /* Cor de fundo do cabeçalho */
-    padding: 10px 20px; /* Espaçamento interno */
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between; /* Divide espaço entre os itens */
-    align-items: center; /* Alinha verticalmente os itens */
-  }
-  
-  /* Logo */
-  .nav-logo img {
-    max-height: 70px; /* Ajuste o tamanho da logo */
-    margin-left: 50px;
-  }
-  
-  /* Links de navegação */
-  .nav-links {
-    display: flex; /* Alinha links em linha */
-    gap: 20px; /* Espaçamento entre os links */
-    margin-right: 70px;
-  }
-  .btn {
-    border-radius: 8px;
-    background-color: #007bff;
-    padding: 5px 5px;
-  }
-  
-  .nav-links a {
-    text-decoration: none; /* Remove sublinhado */
-    color: #ffffff; /* Cor do texto */
-    font-weight: bold; /* Negrito */
-    transition: color 0.3s; /* Efeito de transição ao passar o mouse */
-  }
-  
-  .nav-links a:hover {
-    color: #007bff; /* Altere para a cor desejada ao passar o mouse */
-  }
+/* Estilos gerais */
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
 
-  /* Estilo para o contêiner que engloba o header e a seção 1 */
+/* Logo */
+.logo img {
+  max-height: 70px;
+  /* Ajuste o tamanho da logo */
+  margin-left: 20px;
+}
+
+nav div.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav div.logo p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+/* Links de navegação */
+.opcoes {
+  display: flex;
+  /* Alinha links em linha */
+  align-items: center;
+  gap: 20px;
+  /* Espaçamento entre os links */
+  margin-right: 70px;
+}
+
+.btn {
+  border-radius: 8px;
+  background-color: #007bff;
+  padding: 6px 20px;
+}
+
+.opcoes a {
+  text-decoration: none;
+    color: var(--bege);
+    font-family: 'Poppins';
+    margin: 0 30px;
+}
+
+.opcoes a:hover {
+  color: #007bff;
+  /* Altere para a cor desejada ao passar o mouse */
+}
+
+/* Estilo para o contêiner que engloba o header e a seção 1 */
 .bg-home {
-    background-image: url('../images/BGPrincipal.png'); /* Caminho da imagem */
-  background-size: cover; /* Faz a imagem cobrir todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
-  width: 100vw; /* Largura da viewport */
-  height: 100vh; /* Altura da viewport */
-  color: white; /* Deixe o texto visível */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Melhor visualização do texto */
-  }
-  
-  /* Ajuste interno para espaçamento */
-  .hero {
-    padding: 100px 20px; /* Espaçamento da seção */
-    text-align: center; /* Centraliza o conteúdo */
-  }
-  
-  .header {
-    padding: 20px 0; /* Espaçamento no topo do cabeçalho */
-  }
+  background-image: url("../images/BGPrincipal.png");
+  /* Caminho da imagem */
+  background-size: cover;
+  /* Faz a imagem cobrir todo o espaço */
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Evita que a imagem se repita */
+  width: 100vw;
+  /* Largura da viewport */
+  height: 100vh;
+  /* Altura da viewport */
+  color: white;
+  /* Deixe o texto visível */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Melhor visualização do texto */
+}
+
+
+nav button.menu {
+  display: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background: transparent;
+}
+
+nav button.menu span {
+  background-color: #fff;
+  position: absolute;
+  height: 3px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+nav button.menu span.um {
+  width: 25px;
+  height: 3px;
+  bottom: 4px;
+  right: 0;
+}
+
+nav button.menu span.dois {
+  width: 35px;
+  height: 3px;
+  top: 4px;
+  right: 0;
+}
+
+nav button.menu.ativo span {
+  background-color: #ff0000;
+}
+
+nav button.menu.ativo span.um {
+  width: 30px;
+  bottom: 8px;
+  right: -5px;
+  transform: rotate(45deg);
+}
+
+nav button.menu.ativo span.dois {
+  width: 30px;
+  top: 8px;
+  right: -5px;
+  transform: rotate(-45deg);
+}
+
+
+  @media screen and (max-width: 1000px) {
+    nav {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+    }
+    
+    nav div.logo {
+        display: flex;
+        align-items: center;
+    }
+    nav div.logo p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+    nav .opcoes {
+         position: fixed;
+         background-color: #141e8b6d;
+         width: 100%;
+         top: 60px;
+         right: 20px;
+         flex-direction: column;
+         max-width: 280px;
+         padding: 20px 40px;
+         align-items: flex-start;
+         display: flex;
+         align-items: center;
+         border-radius: 10px;
+         border: 1px solid #000000;
+         margin: 40px 0 0 0;
+         opacity: 0;
+         visibility: hidden;
+         pointer-events: none;
+         transition: all 0.3;
+    }
+
+    nav .opcoes.mostrar {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    nav .opcoes a {
+        margin: 5px 5px;
+       
+    }
+    nav button.menu {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        background: transparent;
+        margin: 0 20px 0 0;
+    }
+    
+    nav button.menu span {
+        background-color: #ffffff;
+        position: absolute;
+        height: 3px;
+        transition: all 0.3s;
+        border-radius: 5px;
+    }
+    
+    nav button.menu span.um {
+        width: 25px;
+        height: 3px;
+        bottom: 4px;
+        right: 0;
+    }
+    
+    nav button.menu span.dois {
+        width: 35px;
+        height: 3px;
+        top: 4px;
+        right: 0;
+        
+    }
+    nav button.menu.ativo span {
+        background-color: #ff0000;
+    }
+    
+    nav button.menu.ativo span.um {
+        width: 30px;
+        bottom: 8px;
+        right: -5px;
+        transform: rotate(45deg);
+        
+    }
+    
+    nav button.menu.ativo span.dois {
+        width: 30px;
+        top: 8px;
+        right: -5px;
+        transform: rotate(-45deg);
+    }
+}

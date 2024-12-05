@@ -1,26 +1,54 @@
-/* Estilo para a seção */
 .section1 {
-    display: flex; /* Ativa o flexbox para layout flexível */
-    justify-content: space-between; /* Coloca os itens nos extremos (texto à esquerda, vídeo à direita) */
-    align-items: center; /* Centraliza verticalmente os itens */
-    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+  display: flex; /* Ativa o flexbox para layout flexível */
+  justify-content: space-between; /* Coloca os itens nos extremos (texto à esquerda, vídeo à direita) */
+  align-items: center; /* Centraliza verticalmente os itens */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+  padding: 100px 0;
+}
+
+/* Estilo para o texto */
+.text h1 {
+  font-size: 3rem; /* Tamanho grande da fonte */
+  margin: 10px 0; /* Pouco espaço entre os textos */
+  font-family: Arial, Helvetica, sans-serif; /* Fonte legível */
+  font-weight: bold; /* Negrito para destaque */
+  color: #ffffff; /* Cor do texto (ajuste conforme sua preferência) */
+  line-height: 1.2; /* Reduz o espaçamento entre as linhas */
+}
+
+.text {
+  text-align: center; /* Centraliza o texto horizontalmente */
+  margin: 140px 250px; /* Centraliza o contêiner */
+}
+
+/* Estilo para o vídeo */
+.video img {
+  max-width: 100%; /* Garante que o vídeo ou imagem não ultrapasse o contêiner */
+  max-height: 600px; /* Define uma altura máxima */
+  object-fit: contain; /* Ajusta a imagem dentro do contêiner */
+  margin-right: 240px;
+  padding-top: 100px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .section1 {
+    flex-direction: column; /* Empilha os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+    padding: 50px 20px; /* Ajusta o padding para telas menores */
   }
-  
-  /* Estilo para o texto */
-  .text h1 {
-    font-size: 3rem; /* Aumenta o tamanho do texto */
-    color: white; /* Cor do texto */
-    text-align: left; /* Alinha o texto à esquerda */
-    line-height: 1.5; /* Espaçamento entre linhas */
-    margin-left: 240px;
-    padding-top: 150px;
+
+  .text {
+    margin: 20px 0; /* Remove margens grandes em dispositivos menores */
   }
-  
-  /* Estilo para o vídeo */
+
   .video img {
-    max-width: 100%; /* Garante que o vídeo ou imagem não ultrapasse o contêiner */
-    max-height: 600px; /* Define uma altura máxima */
-    object-fit: contain; /* Ajusta a imagem dentro do contêiner */
-    margin-right: 240px;
-    padding-top: 100px;
+    margin-right: 0; /* Remove a margem lateral */
+    padding-top: 20px; /* Adiciona espaçamento acima da imagem */
+    max-height: 300px; /* Reduz a altura máxima da imagem */
   }
+
+  .text h1 {
+    font-size: 2rem; /* Reduz o tamanho do texto para melhor ajuste */
+  }
+}

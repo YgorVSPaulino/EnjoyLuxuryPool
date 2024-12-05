@@ -1,46 +1,70 @@
 .guardiao-piscina {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .guardiao-piscina h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.guardiao-piscina h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #333; /* Cor suave */
+}
+
+.guardiao-piscina .conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+/* Imagem e texto */
+.guardiao-piscina img {
+  max-width: 40%;
+  height: auto;
+}
+
+.guardiao-piscina p {
+  max-width: 55%;
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+  margin-left: 10px; /* Move o texto ligeiramente para a direita */
+}
+
+/* Botão Saiba Mais */
+.guardiao-piscina .saiba-mais {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #007BFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.guardiao-piscina .saiba-mais:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
   .guardiao-piscina .conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 20px;
+    flex-direction: column; /* Alinha os itens em coluna */
+    text-align: center;
   }
-  
+
   .guardiao-piscina img {
-    max-width: 40%;
-    height: auto;
+    max-width: 100%; /* Imagem ocupa toda a largura */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
   }
-  
+
   .guardiao-piscina p {
-    max-width: 55%;
-    text-align: justify;
+    max-width: 100%; /* Texto ocupa toda a largura */
+    margin-left: 0; /* Remove o deslocamento horizontal */
   }
-  
-  .guardiao-piscina .saiba-mais {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #007BFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .guardiao-piscina .saiba-mais:hover {
-    background-color: #0056b3;
-  }
+}

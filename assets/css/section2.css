@@ -1,26 +1,72 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 70px;
-  }
-  
-  .image {
-    width: 600px;
-    margin-left: 70px;
-    height: auto;
-    border-radius: 15px; /* Borda arredondada */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para destaque */
-  }
-  
-  .text-content {
-    max-width: 60%;
-    width: 500px;
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 70px;
+}
+
+/* Imagem */
+.image {
+  width: 500px; /* Largura da imagem */
+  height: 500px; /* Altura da imagem */
+  margin-left: 90px;
+  object-fit: cover; /* Ajusta a proporção da imagem */
+  border-radius: 50%; /* Arredonda a imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Conteúdo de texto */
+.text-content {
+  max-width: 60%;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Texto em coluna */
+  gap: 15px; /* Espaçamento entre os parágrafos */
+  text-align: justify;
+  margin-right: 90px;
+}
+
+.text-content h2 {
+  font-size: 2.5rem; /* Tamanho grande do título */
+  margin-bottom: 20px;
+  color: #007bff; /* Cor destacada */
+}
+
+.text-content p {
+  font-size: 1.2rem; /* Tamanho do texto */
+  line-height: 1.6; /* Melhora a legibilidade */
+  color: #000000; /* Cor para leitura */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Alinha os itens em coluna */
     align-items: center;
-    flex-direction: column; /* Organiza o texto em colunas */
-    gap: 15px; /* Espaçamento entre os parágrafos */
-    text-align: justify;
-    margin-right: 90px;
-    
+    padding: 20px; /* Reduz o padding */
   }
+
+  .image {
+    width: 300px; /* Reduz o tamanho da imagem */
+    height: 300px;
+    margin-left: 0; /* Remove a margem esquerda */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+  }
+
+  .text-content {
+    max-width: 100%; /* Ocupa toda a largura */
+    margin-right: 0; /* Remove a margem direita */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .text-content h2 {
+    font-size: 2rem; /* Reduz o tamanho do título */
+  }
+
+  .text-content p {
+    font-size: 1rem; /* Reduz o tamanho da fonte */
+  }
+}

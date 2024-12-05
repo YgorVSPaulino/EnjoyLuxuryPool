@@ -5,14 +5,14 @@
     background-repeat: no-repeat; /* Evita repetição da imagem */
     text-align: center; /* Centraliza os títulos */
   }
-  
   .orçamento-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Ajusta a altura para cobrir toda a tela */
     position: relative;
     overflow: hidden;
+    padding: 20px; /* Adiciona espaçamento em telas menores */
   }
   
   /* Box de vidro */
@@ -20,13 +20,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15); /* Transparência aumentada */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    padding: 20px;
-    width: 80%;
-    max-width: 1000px;
+    padding: 30px;
+    width: 90%; /* Ajusta a largura para telas menores */
+    max-width: 1200px;
     color: #fff;
     position: relative;
     z-index: 2;
@@ -34,24 +34,27 @@
   
   /* Estilo do texto */
   .texto {
-    max-width: 40%;
+    max-width: 45%;
+    text-align: left;
   }
   
   .texto h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 28px; /* Tamanho maior para destaque */
+    margin-bottom: 15px;
+    font-weight: bold;
   }
   
   .texto p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8;
+    margin-bottom: 10px;
   }
   
   /* Estilo do formulário */
   .formulario {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     max-width: 50%;
     width: 100%;
   }
@@ -59,27 +62,27 @@
   .formulario input,
   .formulario textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px; /* Maior espaçamento interno */
     border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
+    border-radius: 8px; /* Bordas mais suaves */
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
-    font-size: 14px;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
     outline: none;
   }
   
   .formulario textarea {
     resize: none;
-    height: 100px;
+    height: 150px; /* Altura ajustada para mais espaço */
   }
   
   .formulario button {
-    padding: 10px 20px;
+    padding: 15px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #007bff;
     color: white;
-    font-size: 16px;
+    font-size: 18px; /* Destaque maior */
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -91,16 +94,32 @@
   /* Responsividade */
   @media (max-width: 768px) {
     .box-vidro {
-      flex-direction: column;
+      flex-direction: column; /* Empilha os elementos em coluna */
       text-align: center;
+      padding: 20px; /* Reduz o padding para telas menores */
     }
   
     .texto {
-      max-width: 100%;
+      max-width: 100%; /* Expande o texto para ocupar a largura total */
       margin-bottom: 20px;
     }
   
+    .texto h2 {
+      font-size: 24px; /* Reduz o tamanho do título */
+    }
+  
     .formulario {
-      max-width: 100%;
+      max-width: 100%; /* Expande o formulário para ocupar toda a largura */
+    }
+  
+    .formulario input,
+    .formulario textarea {
+      font-size: 14px; /* Reduz o tamanho da fonte */
+      padding: 12px; /* Ajusta o espaçamento interno */
+    }
+  
+    .formulario button {
+      font-size: 16px; /* Reduz o tamanho do botão */
+      padding: 12px 20px;
     }
   }
