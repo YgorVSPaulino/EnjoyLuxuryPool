@@ -39,7 +39,7 @@
   }
 
   .text {
-    margin: 20px 0; /* Remove margens grandes em dispositivos menores */
+    margin: 70px 0 0 0; /* Remove margens grandes em dispositivos menores */
   }
 
   .video img {

@@ -1,38 +1,64 @@
+ /* Layout Geral */
+.menu-lateral {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.menu-lateral img {
+  width: 120px;
+  height: auto;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #0056b3;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 600; /* Peso maior para destacar */
+  margin-top: 20px; /* Espaçamento superior, se necessário */
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
   .menu-lateral {
-    display: flex;
+    flex-direction: row; /* Alinha os elementos horizontalmente no mobile */
+    justify-content: center;
+    gap: 50px;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+    height: auto; /* Ajusta a altura */
   }
-  
+
   .menu-lateral img {
-    width: 120px;
-    height: auto;
+    width: 130px; /* Imagens menores no mobile */
   }
-  
-  .menu-links {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+
+  .menu-links:not(.social-links) {
+    display: none; /* Esconde a segunda e terceira div */
   }
-  
+
   .menu-links a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 14px; /* Ajusta o tamanho da fonte */
   }
-  
-  .menu-links a:hover {
-    color: #0056b3;
+
+  footer p {
+    font-weight: 700; /* Peso ainda maior para mobile */
   }
-  
-  p {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #303030;
-  }
-  
+}

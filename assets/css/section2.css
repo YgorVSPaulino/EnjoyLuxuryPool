@@ -70,3 +70,11 @@
     font-size: 1rem; /* Reduz o tamanho da fonte */
   }
 }
+
+@media (min-width: 1024px) { /* Para telas maiores que notebooks */
+  img {
+    width: 100%; /* Ajuste dinâmico */
+    max-width: 2000px; /* Limita o tamanho máximo */
+    margin-top: 0; /* Ajusta a margem, se necessário */
+  }
+}

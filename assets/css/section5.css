@@ -4,8 +4,9 @@
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     text-align: center; /* Centraliza os títulos */
-  }
-  .orçamento-container {
+    margin-top: -10px;
+}
+.orçamento-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,10 +14,10 @@
     position: relative;
     overflow: hidden;
     padding: 20px; /* Adiciona espaçamento em telas menores */
-  }
-  
-  /* Box de vidro */
-  .box-vidro {
+}
+
+/* Box de vidro */
+.box-vidro {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,96 +31,109 @@
     color: #fff;
     position: relative;
     z-index: 2;
-  }
-  
-  /* Estilo do texto */
-  .texto {
+}
+
+/* Estilo do texto */
+.texto {
     max-width: 45%;
     text-align: left;
-  }
-  
-  .texto h2 {
+}
+
+.texto p {
+  color: #fff;
+}
+
+.texto h2 {
     font-size: 28px; /* Tamanho maior para destaque */
     margin-bottom: 15px;
     font-weight: bold;
-  }
-  
-  .texto p {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilo do formulário */
-  .formulario {
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estilo do formulário */
+.formulario {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px; /* Reduz o espaçamento entre os elementos */
     max-width: 50%;
     width: 100%;
-  }
-  
-  .formulario input,
-  .formulario textarea {
-    width: 100%;
-    padding: 15px; /* Maior espaçamento interno */
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    align-items: center; /* Centraliza os campos do formulário */
+}
+
+.formulario button {
+  width: 98%; /* Garante que todos os elementos tenham a mesma largura */
+  padding: 10px; /* Aplica o mesmo padding */
+  font-size: 14px; /* Define o mesmo tamanho de fonte */
+  border-radius: 8px; /* Mantém as bordas consistentes */
+}
+
+.formulario input,
+.formulario textarea {
+    width: 94%; /* Ajusta largura para a responsividade */
+    padding: 10px; /* Reduz o espaçamento interno */
+    border: 1px solid rgb(67, 114, 156);
     border-radius: 8px; /* Bordas mais suaves */
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
-    font-size: 16px; /* Aumenta o tamanho da fonte */
+    font-size: 14px; /* Tamanho menor */
     outline: none;
-  }
-  
-  .formulario textarea {
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    color: #fff; /* Placeholder branco */
+    opacity: 0.8; /* Suaviza a cor */
+}
+
+.formulario textarea {
     resize: none;
-    height: 150px; /* Altura ajustada para mais espaço */
-  }
-  
-  .formulario button {
-    padding: 15px 25px;
+    height: 120px; /* Altura ajustada */
+}
+
+.formulario button {
+    padding: 12px 20px; /* Reduz o tamanho do botão */
     border: none;
     border-radius: 8px;
     background-color: #007bff;
     color: white;
-    font-size: 18px; /* Destaque maior */
+    font-size: 16px; /* Destaque ajustado */
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .formulario button:hover {
+}
+
+.formulario button:hover {
     background-color: #0056b3;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
     .box-vidro {
-      flex-direction: column; /* Empilha os elementos em coluna */
-      text-align: center;
-      padding: 20px; /* Reduz o padding para telas menores */
+        flex-direction: column; /* Empilha os elementos em coluna */
+        text-align: center;
+        padding: 20px; /* Reduz o padding para telas menores */
     }
-  
+
     .texto {
-      max-width: 100%; /* Expande o texto para ocupar a largura total */
-      margin-bottom: 20px;
+        max-width: 100%; /* Expande o texto para ocupar a largura total */
+        margin-bottom: 20px;
     }
-  
+
     .texto h2 {
-      font-size: 24px; /* Reduz o tamanho do título */
+        font-size: 24px; /* Reduz o tamanho do título */
     }
-  
+
     .formulario {
-      max-width: 100%; /* Expande o formulário para ocupar toda a largura */
+        max-width: 100%; /* Expande o formulário para ocupar toda a largura */
     }
-  
+
     .formulario input,
     .formulario textarea {
-      font-size: 14px; /* Reduz o tamanho da fonte */
-      padding: 12px; /* Ajusta o espaçamento interno */
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        padding: 10px; /* Ajusta o espaçamento interno */
     }
-  
+
     .formulario button {
-      font-size: 16px; /* Reduz o tamanho do botão */
-      padding: 12px 20px;
+        font-size: 14px; /* Reduz o tamanho do botão */
+        padding: 10px 15px;
     }
-  }
+}
