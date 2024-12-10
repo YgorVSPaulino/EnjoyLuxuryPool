@@ -10,6 +10,10 @@ nav {
   width: 100%;
   z-index: 3;
 }
+.nav-glass {
+  background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+  transition: all 0.3s ease-in-out; /* Transição suave */
+}
 
 /* Logo */
 .logo img {
@@ -50,7 +54,7 @@ nav div.logo p {
 .opcoes a {
   text-decoration: none;
     color: #fff;
-    font-family: 'Poppins';
+    font-family: 'Inter';
     margin: 0 30px;
 }
 
@@ -190,12 +194,16 @@ nav button.menu.ativo span.dois {
        
     }
     nav button.menu {
-        display: flex;
-        width: 20px;
-        height: 20px;
-        position: relative;
-        background: transparent;
-        margin: 0 20px 0 0;
+      display: flex;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      background: transparent; /* Remove fundo */
+      margin: 0 20px 0 0;
+      border: none; /* Remove borda */
+      outline: none; /* Remove contorno */
+      box-shadow: none; /* Remove sombra */
+      cursor: pointer; /* Mostra o ponteiro ao passar o mouse */
     }
     
     nav button.menu span {

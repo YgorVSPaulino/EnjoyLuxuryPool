@@ -7,6 +7,7 @@
 }
 
 .guardiao-piscina h2 {
+  font-family: 'Inter';
   font-size: 24px;
   margin-bottom: 40px;
   color: #333; /* Cor suave */
@@ -27,6 +28,7 @@
 }
 
 .guardiao-piscina p {
+  font-family: 'Inter';
   max-width: 55%;
   text-align: justify;
   font-size: 1.2rem;
