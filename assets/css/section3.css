@@ -37,7 +37,7 @@
     width: 150px; /* Largura da imagem */
     height: 150px; /* Altura da imagem */
     object-fit: cover; /* Ajusta proporções */
-    border-radius: 8px; /* Arredonda a imagem */
+    border-radius: 25px; /* Arredonda a imagem */
   }
   
   .service-card div {

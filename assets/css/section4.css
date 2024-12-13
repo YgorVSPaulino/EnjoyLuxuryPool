@@ -25,6 +25,7 @@
 .guardiao-piscina img {
   max-width: 40%;
   height: auto;
+  border-radius: 50%;
 }
 
 .guardiao-piscina p {
