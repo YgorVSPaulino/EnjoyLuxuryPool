@@ -18,11 +18,11 @@
 
 .text {
   text-align: center; /* Centraliza o texto horizontalmente */
-  margin: 140px 250px; /* Centraliza o contêiner */
+  margin: 50px 0 0 230px;
 }
 
 /* Estilo para o vídeo */
-.video img {
+.video iframe {
   max-width: 100%; /* Garante que o vídeo ou imagem não ultrapasse o contêiner */
   max-height: 600px; /* Define uma altura máxima */
   object-fit: contain; /* Ajusta a imagem dentro do contêiner */
@@ -42,7 +42,7 @@
     margin: 70px 0 0 0; /* Remove margens grandes em dispositivos menores */
   }
 
-  .video img {
+  .video iframe {
     margin-right: 0; /* Remove a margem lateral */
     padding-top: 20px; /* Adiciona espaçamento acima da imagem */
     max-height: 300px; /* Reduz a altura máxima da imagem */
