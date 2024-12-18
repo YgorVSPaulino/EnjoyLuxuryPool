@@ -11,7 +11,7 @@ nav {
   z-index: 3;
 }
 .nav-glass {
-  background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+  background: rgba(255, 255, 255, 0.385); /* Fundo semi-transparente */
   transition: all 0.3s ease-in-out; /* Transição suave */
 }
 

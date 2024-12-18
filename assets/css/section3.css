@@ -12,6 +12,7 @@
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #ffffff;
+    font-family: 'Poppins';
   }
   
   .service-cards {
@@ -25,8 +26,8 @@
     display: flex;
     align-items: flex-start; /* Alinha o conteúdo no topo */
     gap: 10px; /* Espaçamento entre imagem e texto */
-    background: #1060eb2c;
-    box-shadow: 0 4px 8px rgba(0, 47, 255, 0.921); /* Sombra para destaque */
+    background: #ffffff99;
+    /* box-shadow: 0 4px 8px rgba(0, 47, 255, 0.921); */ /* Sombra para destaque */
     border-radius: 8px; /* Bordas arredondadas */
     padding: 20px;
     max-width: 800px;
@@ -45,68 +46,70 @@
   }
   
   .service-card h3 {
+    font-family: 'Inter';
     font-size: 1.5rem;
     margin: 0;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #000000;
   }
   
   .service-card p {
+    font-family: 'Inter';
     font-size: 1rem;
     line-height: 1.6;
-    color: #ffffff;
+    color: #000000;
   }
 
   .service-card.left {
     flex-direction: row;
+    margin-right: 300px;
   }
   
   /* Estilo para os cards alinhados à direita */
   .service-card.right {
     flex-direction: row-reverse;
+    margin-left: 300px;
   }
   
   /* Responsividade */
   @media screen and (max-width: 768px) {
     .service-cards {
       flex-direction: column; /* Empilha os cards na vertical */
+      align-items: center; /* Alinha os cards ao centro */
+      gap: 30px; /* Espaçamento adicional entre os cards */
     }
   
     .service-card {
       flex-direction: column; /* Imagem acima do texto */
       align-items: center; /* Centraliza o conteúdo */
+      text-align: center; /* Centraliza todo o texto */
+      padding: 20px; /* Ajuste de padding para mobile */
+      max-width: 90%; /* Reduz a largura para encaixar melhor */
     }
   
     .service-card img {
-      margin-bottom: 15px;
+      margin-bottom: 15px; /* Espaço entre a imagem e o texto */
+      width: 120px; /* Reduz o tamanho da imagem para mobile */
+      height: 120px; /* Mantém proporções menores */
     }
   
     .service-card div {
-      text-align: center; /* Centraliza o texto */
+      text-align: center; /* Centraliza o texto no mobile */
+    }
+  
+    .service-card h3 {
+      text-align: center; /* Centraliza o título */
+    }
+  
+    .service-card p {
+      text-align: center; /* Centraliza o parágrafo */
+    }
+    .service-card.left {
+      margin-right: 0;
+    }
+    
+    /* Estilo para os cards alinhados à direita */
+    .service-card.right {
+      margin-left: 0;
     }
   }
-  
-
-.service-card.right div {
-  text-align: right; /* Texto alinhado à direita */
-}
-
-/* H3 alinhado conforme posição */
-.service-card.left h3 {
-  text-align: left; /* Título alinhado à esquerda */
-}
-
-.service-card.right h3 {
-  text-align: right; /* Título alinhado à direita */
-}
-
-/* Parágrafos alinhados conforme posição */
-.service-card.left p {
-  text-align: left; /* Texto do parágrafo alinhado à esquerda */
-}
-
-.service-card.right p {
-  text-align: right; /* Texto do parágrafo alinhado à direita */
-}
-
-  

@@ -20,11 +20,15 @@
 }
 
 .menu-links a {
+  font-family: 'Poppins';
   text-decoration: none;
   color: #007BFF;
   font-weight: bold;
   font-size: 16px;
   transition: color 0.3s ease;
+}
+.menu-links i {
+  margin-right: 3px;
 }
 
 .menu-links a:hover {
