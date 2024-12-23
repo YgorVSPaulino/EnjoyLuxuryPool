@@ -37,6 +37,13 @@ body, h1, h2, p, a, nav, section, footer {
     text-align: center;
     padding: 50px 20px;
   }
+
+  @font-face {
+    font-family: 'MinhaFonte';
+    src: url('/assets/fonts/BRLNSDB.TTF') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
   
  /*  footer {
     text-align: center;
