@@ -11,7 +11,10 @@ nav {
   z-index: 3;
 }
 .nav-glass {
-  background: rgba(255, 255, 255, 0.385); /* Fundo semi-transparente */
+  background-image: url('/assets/images/navbar.png'); /* Caminho para a imagem */
+  background-size: cover; /* Faz a imagem cobrir todo o elemento */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
   transition: all 0.3s ease-in-out; /* Transição suave */
 }
 
@@ -139,7 +142,7 @@ nav button.menu.ativo span.dois {
         z-index: 3;
     }
     .logo img {
-      width: 50px; /* Reduz o tamanho da logo */
+      width: 120px; /* Reduz o tamanho da logo */
       margin-left: 10px; /* Ajusta o espaçamento lateral */
   }
 
