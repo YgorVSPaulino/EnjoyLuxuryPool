@@ -12,7 +12,7 @@
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #ffffff;
-    font-family: 'Poppins';
+    font-family: 'MinhaFonte';
   }
   
   .service-cards {
@@ -23,15 +23,24 @@
   }
   
   .service-card {
+   
+    backdrop-filter: blur(10px); 
     display: flex;
     align-items: flex-start; /* Alinha o conteúdo no topo */
     gap: 10px; /* Espaçamento entre imagem e texto */
-    background: #ffffff99;
-    /* box-shadow: 0 4px 8px rgba(0, 47, 255, 0.921); */ /* Sombra para destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.558); /* Adiciona um leve efeito de sombra */
+    background-color: #f9f9f9; /* Sombra para destaque */
     border-radius: 8px; /* Bordas arredondadas */
     padding: 20px;
     max-width: 800px;
     width: 100%;
+  }
+
+  .quadrado h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
   
   .service-card img {
@@ -46,7 +55,7 @@
   }
   
   .service-card h3 {
-    font-family: 'Inter';
+    font-family: 'MinhaFonte';
     font-size: 1.5rem;
     margin: 0;
     margin-bottom: 10px;
@@ -54,7 +63,7 @@
   }
   
   .service-card p {
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-size: 1rem;
     line-height: 1.6;
     color: #000000;
@@ -76,21 +85,26 @@
     .service-cards {
       flex-direction: column; /* Empilha os cards na vertical */
       align-items: center; /* Alinha os cards ao centro */
-      gap: 30px; /* Espaçamento adicional entre os cards */
+      gap: 20px; /* Ajuste no espaçamento adicional entre os cards */
+      padding: 0 15px; /* Margem interna para afastar os cards da borda da tela */
     }
   
     .service-card {
       flex-direction: column; /* Imagem acima do texto */
       align-items: center; /* Centraliza o conteúdo */
       text-align: center; /* Centraliza todo o texto */
-      padding: 20px; /* Ajuste de padding para mobile */
-      max-width: 90%; /* Reduz a largura para encaixar melhor */
+      padding: 15px; /* Ajuste de padding para mobile */
+      max-width: 80%; /* Reduz a largura do card */
+      margin: 0 auto; /* Centraliza o card horizontalmente */
+      border-radius: 10px; /* Suaviza os cantos */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.558); /* Adiciona um leve efeito de sombra */
+      background-color: #f9f9f9; /* Fundo para destacar os cards */
     }
   
     .service-card img {
-      margin-bottom: 15px; /* Espaço entre a imagem e o texto */
-      width: 120px; /* Reduz o tamanho da imagem para mobile */
-      height: 120px; /* Mantém proporções menores */
+      margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+      width: 100px; /* Reduz o tamanho da imagem */
+      height: 100px; /* Mantém proporções menores */
     }
   
     .service-card div {
@@ -99,16 +113,18 @@
   
     .service-card h3 {
       text-align: center; /* Centraliza o título */
+      font-size: 1.2rem; /* Reduz o tamanho do título */
     }
   
     .service-card p {
       text-align: center; /* Centraliza o parágrafo */
+      font-size: 0.9rem; /* Ajusta o tamanho do texto */
     }
+  
     .service-card.left {
       margin-right: 0;
     }
-    
-    /* Estilo para os cards alinhados à direita */
+  
     .service-card.right {
       margin-left: 0;
     }
