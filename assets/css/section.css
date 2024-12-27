@@ -43,7 +43,7 @@
   }
 
   .video iframe {
-    margin-left: -10px; /* Remove a margem lateral */
+    margin-left: 0px; /* Remove a margem lateral */
     padding-top: 20px; /* Adiciona espaçamento acima da imagem */
     max-height: 300px; /* Reduz a altura máxima da imagem */
   }
